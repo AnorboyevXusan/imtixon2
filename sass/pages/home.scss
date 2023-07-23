@@ -291,6 +291,12 @@
          background: #FFF;
          @media screen and (max-width: 600px){
             width: 350px;
+
+            img{
+               width: 350px;
+            }
+         }
+
          }
          .cartt-tex{
             padding: 10px;

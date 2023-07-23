@@ -326,6 +326,11 @@ main {
     width: 350px;
   }
 }
+@media screen and (max-width: 600px) {
+  .news .news__box-cartt .cartt img {
+    width: 350px;
+  }
+}
 .news .news__box-cartt .cartt .cartt-tex {
   padding: 10px;
 }
