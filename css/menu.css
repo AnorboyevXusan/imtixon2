@@ -42,12 +42,12 @@ main {
 
 .menu {
   margin-bottom: 2220px;
-  padding-top: 128px;
+  padding-top: 40px;
 }
 .menu .menu-butto {
   margin-bottom: 40px;
-  z-index: 1000;
-  position: sticky;
+  z-index: 100;
+  position: fixed;
   background: #BB2339;
   color: #fff;
   width: 424px;
