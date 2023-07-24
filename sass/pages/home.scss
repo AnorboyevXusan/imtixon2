@@ -5,6 +5,9 @@
 
 
 .header {
+   position: fixed;
+   width: 100%;
+   z-index: 100;
    background-color: #BB2339;
 
    &__container-xxl {
@@ -329,7 +332,7 @@
    margin-bottom: 80px;
    position: relative;
    height: 763px;
-   background-image: url(../images/aa.png);
+   background-image: url(../images/home-bg.png);
    &__vidyo-btn{
       position: absolute;
       left: 700px;
