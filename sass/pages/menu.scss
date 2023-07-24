@@ -1,0 +1,43 @@
+@use "../global";
+@use"../utils/mixins.scss" as mx;
+
+.menu{
+  margin-bottom: 2220px;
+  padding-top: 128px;
+  .menu-butto{
+    margin-bottom: 40px;
+    z-index: 1000;
+    position:sticky;
+    background: #BB2339;
+    color: #fff;
+    width: 424px;
+    border-radius: 12px;
+    padding: 20px;
+    padding-bottom: 40px;
+    
+    .btn { 
+      color: #fff;
+      border: 1px solid#fff;
+      border-radius: 50px;
+      margin-top: 20px;
+    }
+    .menu-aa{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: space-between;
+      position: relative;
+    }
+  }
+  &__box-cart{
+    
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: flex-start;
+    position: absolute;
+    left: 590px;
+    .card{
+      width: 300px;
+    }
+  }
+}
