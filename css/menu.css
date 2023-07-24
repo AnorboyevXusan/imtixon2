@@ -41,14 +41,18 @@ main {
 }
 
 .menu {
-  margin-bottom: 2220px;
-  padding-top: 40px;
+  margin-bottom: 300px;
+  padding-top: 100px;
 }
 .menu .menu-butto {
   margin-bottom: 40px;
   z-index: 100;
-  position: fixed;
+  position: sticky;
+  top: 100px;
+  left: 0;
   background: #BB2339;
+  height: -moz-fit-content;
+  height: fit-content;
   color: #fff;
   width: 424px;
   border-radius: 12px;
@@ -61,20 +65,17 @@ main {
   border-radius: 50px;
   margin-top: 20px;
 }
-.menu .menu-butto .menu-aa {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: space-between;
-  position: relative;
-}
 .menu__box-cart {
   display: grid;
   gap: 20px;
   grid-template-columns: 1fr 1fr;
   justify-content: flex-start;
-  position: absolute;
   left: 590px;
 }
 .menu__box-cart .card {
   width: 300px;
+}
+.menu .menu-aa {
+  display: flex;
+  gap: 45px;
 }
