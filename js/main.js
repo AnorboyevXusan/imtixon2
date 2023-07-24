@@ -1,16 +1,26 @@
 window.addEventListener("scroll", function () {
   toggleBacktop();
-});
+})
 
-let backtop = document.getElementById("backtop");
+const backtop = document.getElementById("backtop");
 
 function toggleBacktop() {
-  if (
-    document.body.scrollTop > 200 ||
-    document.documentElement.scrollTop > 200
-  ) {
+  if (window.scrollY > 200) {
     backtop.classList.add('backtop-show')
   } else {
     backtop.classList.remove('backtop-show')
   }
 }
+
+backtop.addEventListener('click', function () {
+  scrollToTop();
+})
+
+const scrollToTop = () => {
+  window.scrollTo(0, 0)
+}
+
+const loader = document.querySelector('.loaders')
+setTimeout(() => {
+  loader.style.display = 'none'
+}, 2000)
